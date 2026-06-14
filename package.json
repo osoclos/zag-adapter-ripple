@@ -1,0 +1,62 @@
+{
+    "name": "browser-lib-template",
+    "version": "0.0.0",
+    "description": "A simple template for creating browser libraries using TsDown and Vitest",
+
+    "homepage": "https://github.com/osoclos/browser-lib-template",
+
+    "license": "MIT",
+    "author": {
+        "name": "osoclos",
+        "email": "osoclosus@gmail.com",
+
+        "url": "https://github.com/osoclos"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/osoclos/browser-lib-template.git"
+    },
+
+    "bugs": {
+        "email": "osoclosus@gmail.com",
+        "url": "https://github.com/osoclos/browser-lib-template/issues"
+    },
+
+    "private": false,
+
+    "type": "module",
+
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+
+    "files": ["dist"],
+    "exports": {
+        ".": "./dist/index.js",
+        "./package.json": "./package.json"
+    },
+
+    "scripts": {
+        "dev": "concurrently \"tsdown --watch\" \"vitest watch\"",
+
+        "build": "tsdown",
+        "test": "vitest",
+
+        "bump": "tsdown && bumpp"
+    },
+
+    "devDependencies": {
+        "tsdown": "^0.22.2",
+
+        "vitest": "^4.1.8",
+        "@vitest/browser-preview": "^4.1.8",
+
+        "typescript": "^6.0.3",
+
+        "@types/node": "^25.9.3",
+
+        "bumpp": "^11.1.0",
+        "concurrently": "^10.0.3"
+    }
+}

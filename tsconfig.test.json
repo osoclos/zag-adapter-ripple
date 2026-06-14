@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.lib.json",
+    "include": ["tests"],
+
+    "compilerOptions": {
+        // Modules
+        "types": ["vite/client"],
+
+        // Emit
+        "declaration": false,
+        "emitDeclarationOnly": false,
+        "noEmit": true
+    }
+}
