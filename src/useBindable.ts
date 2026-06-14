@@ -33,11 +33,8 @@ export function useBindable<T>(props: () => BindableParams<T>): Bindable<T> {
 
             if (!sExternal.value) sValue.value = next;
 
-            // !REDO
-            // Synchronously update refs so re-entrant calls (e.g. focus/blur
-            // events triggered by .focus() inside an action) see the correct
-            // previous value. The async effect also syncs these, but it is
-            // batched and won't flush between re-entrant send() calls.
+            // update and sync references so re-entrant calls like focus/blur events triggered by .focus()/.blur() inside an action will see the previous value correctly.
+            // async effects will batch these updates and will not flush between re-entrant send() calls.
             refValue.current = next;
             refValuePrev.current = next;
 

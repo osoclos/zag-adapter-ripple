@@ -13,13 +13,14 @@ import { useTrack } from "./useTrack";
 
 import { access, compact, isTracked } from "./utils";
 
-// !REDO
 /**
-* UseMachine hook for Ripple JS
-* @param machine - The machine to use
-* @param userProps - The user props to use
-* @returns The service
-*/
+  * Hook for Ripple.ts to use Zag.js machines
+  *
+  * @param machine - The machine to use
+  * @param userProps - The user-provided properties to use
+  *
+  * @returns the service used to connect to the component
+  */
 export function useMachine<T extends MachineSchema>(machine: Machine<T>, userProps: MaybeTracked<T["props"]>): Service<T> {
     const scope = rTrack(() => {
         const { id, ids, getRootNode } = access(userProps as NonNullable<T["props"]>);
@@ -352,10 +353,8 @@ function resolveTransitionTarget<T extends MachineSchema>(machine: Machine<T>, v
 
     if (source === undefined || state.includes(".") || state.startsWith("#")) return resolveStateValue(machine, value, source);
 
-    //! REDO
-
-    // Zag 1.41 resolves bare relative targets from ancestors/siblings; parent-local
-    // child targets still need the explicit child path for older machine definitions.
+    // Zag 1.41 resolves bare relative targets from ancestors/siblings;
+    // parent-local child targets still need the explicit child path for older machine definitions.
 
     const pathChild = `${source}.${state}`;
     return resolveStateValue(machine, ensureStateIndex(machine).has(pathChild) ? pathChild : value, source);

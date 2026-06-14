@@ -16,13 +16,8 @@ export type Compacted<T> =
             : U
         : never;
 
-// !REDO
-/**
- * Unwrap tracked values and strip undefined — replaces `compact(access(v))`.
- * Ripple Tracked objects are plain `{}` literals with circular block refs,
- * so the generic `compact` from @zag-js/utils recurses infinitely into them.
- * This function unwraps at the top level AND per-property level.
- */
+// unwrap tracked values and strip undefined properties.
+// since Ripple.ts tracked objects circularly references itself, the default `compact` function from Zag.js will never end its recursion.
 export function compact<T>(obj: T): Compacted<T> {
     if (!isPlainObject(obj) || obj === undefined || obj === null) return obj as Compacted<T>;
 
