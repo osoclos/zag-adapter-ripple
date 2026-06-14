@@ -1,3 +1,3 @@
-# browser-lib-template
+# zag-adapter-ripple
 
-A simple template for creating browser libraries using TsDown and Vitest
+A [Zag.js](https://zagjs.com/) framework adapter for [Ripple.ts (v0.3.0)](https://www.ripple-ts.com/)

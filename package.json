@@ -1,9 +1,9 @@
 {
-    "name": "browser-lib-template",
-    "version": "0.0.0",
-    "description": "A simple template for creating browser libraries using TsDown and Vitest",
+    "name": "zag-adapter-ripple",
+    "version": "0.1.0",
+    "description": "A Zag.js framework adapter for Ripple.ts (v0.3.0)",
 
-    "homepage": "https://github.com/osoclos/browser-lib-template",
+    "homepage": "https://github.com/osoclos/zag-adapter-ripple",
 
     "license": "MIT",
     "author": {
@@ -15,12 +15,12 @@
 
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/osoclos/browser-lib-template.git"
+        "url": "git+https://github.com/osoclos/zag-adapter-ripple.git"
     },
 
     "bugs": {
         "email": "osoclosus@gmail.com",
-        "url": "https://github.com/osoclos/browser-lib-template/issues"
+        "url": "https://github.com/osoclos/zag-adapter-ripple/issues"
     },
 
     "private": false,
