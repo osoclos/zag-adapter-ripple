@@ -1,0 +1,54 @@
+{
+    "files": [],
+    "references": [
+        { "path": "./tsconfig.app.json"  },
+        { "path": "./tsconfig.node.json" }
+    ],
+
+    "compilerOptions": {
+        // Type Checking
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "strict": true,
+
+        // Modules
+        "allowImportingTsExtensions": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "noUncheckedSideEffectImports": true,
+        "resolveJsonModule": true,
+        "rootDir": ".",
+        "types": [],
+
+        // Emit
+        "noEmit": true,
+
+        // Interop Constraints
+        "allowSyntheticDefaultImports": true,
+        "erasableSyntaxOnly": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
+
+        // Language and Environment
+        "libReplacement": false,
+        "moduleDetection": "force",
+        "useDefineForClassFields": true,
+
+        // Output Formatting
+        "noErrorTruncation": true,
+        "pretty": true,
+
+        // Completeness
+        "skipLibCheck": false
+    }
+}

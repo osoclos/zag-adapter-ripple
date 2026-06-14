@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+* {
+    color-scheme: dark light;
+
+    pointer-events: all;
+    touch-action: auto;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+    touch-action: none;
+}

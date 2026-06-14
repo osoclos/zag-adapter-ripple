@@ -1,0 +1,104 @@
+{
+    "name": "ripple-template",
+    "version": "0.0.0",
+    "description": "A template to set up a website using Ripple",
+    "keywords": [],
+
+    "homepage": "https://github.com/osoclos/ripple-template",
+    "bugs": {
+        "email": "osoclosus@gmail.com",
+        "url": "https://github.com/osoclos/ripple-template/issues"
+    },
+
+    "license": "MIT",
+    "author": {
+        "name": "osoclos",
+        "email": "osoclosus@gmail.com",
+
+        "url": "https://github.com/osoclos"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/osoclos/ripple-template.git"
+    },
+
+    "private": true,
+
+    "files": ["dist"],
+    "exports": { "./package.json": "./package.json" },
+
+    "type": "module",
+
+    "scripts": {
+        "dev": "vite",
+
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+
+    "dependencies": {
+        "ripple": "^0.3.77",
+        "zag-adapter-ripple": "workspace:",
+
+        "@zag-js/accordion": "^1.41.2",
+		"@zag-js/angle-slider": "^1.41.2",
+		"@zag-js/avatar": "^1.41.2",
+		"@zag-js/carousel": "^1.41.2",
+		"@zag-js/cascade-select": "^1.41.2",
+		"@zag-js/checkbox": "^1.41.2",
+		"@zag-js/clipboard": "^1.41.2",
+		"@zag-js/collapsible": "^1.41.2",
+		"@zag-js/color-picker": "^1.41.2",
+		"@zag-js/combobox": "^1.41.2",
+		"@zag-js/date-picker": "^1.41.2",
+		"@zag-js/date-utils": "^1.41.2",
+		"@zag-js/dialog": "^1.41.2",
+		"@zag-js/docs": "^1.41.2",
+		"@zag-js/editable": "^1.41.2",
+		"@zag-js/file-upload": "^1.41.2",
+		"@zag-js/floating-panel": "^1.41.2",
+		"@zag-js/hover-card": "^1.41.2",
+		"@zag-js/i18n-utils": "^1.41.2",
+		"@zag-js/image-cropper": "^1.41.2",
+		"@zag-js/listbox": "^1.41.2",
+		"@zag-js/menu": "^1.41.2",
+		"@zag-js/number-input": "^1.41.2",
+		"@zag-js/pagination": "^1.41.2",
+		"@zag-js/password-input": "^1.41.2",
+		"@zag-js/pin-input": "^1.41.2",
+		"@zag-js/popover": "^1.41.2",
+		"@zag-js/presence": "^1.41.2",
+		"@zag-js/progress": "^1.41.2",
+		"@zag-js/qr-code": "^1.41.2",
+		"@zag-js/radio-group": "^1.41.2",
+		"@zag-js/rating-group": "^1.41.2",
+		"@zag-js/react": "^1.41.2",
+		"@zag-js/scroll-area": "^1.41.2",
+		"@zag-js/select": "^1.41.2",
+		"@zag-js/signature-pad": "^1.41.2",
+		"@zag-js/slider": "^1.41.2",
+		"@zag-js/splitter": "^1.41.2",
+		"@zag-js/steps": "^1.41.2",
+		"@zag-js/switch": "^1.41.2",
+		"@zag-js/tabs": "^1.41.2",
+		"@zag-js/tags-input": "^1.41.2",
+		"@zag-js/timer": "^1.41.2",
+		"@zag-js/toast": "^1.41.2",
+		"@zag-js/toggle-group": "^1.41.2",
+		"@zag-js/tooltip": "^1.41.2",
+		"@zag-js/tour": "^1.41.2",
+		"@zag-js/tree-view": "^1.41.2"
+    },
+
+    "devDependencies": {
+        "vite": "^8.0.16",
+        "@ripple-ts/vite-plugin": "^0.3.77",
+
+        "tailwindcss": "^4.3.0",
+        "@tailwindcss/vite": "^4.3.0",
+
+        "typescript": "^6.0.3",
+        "@types/node": "^25.9.2"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "extends": "./tsconfig.json",
+    "include": ["src"],
+
+    "compilerOptions": {
+        // Modules
+        "paths": { "/*": ["./public/*"] },
+        "types": ["vite/client", "./lib/ripple-shims.d.ts"],
+
+        // Language and Environment
+        "jsx": "preserve",
+        "jsxImportSource": "ripple",
+        "lib": ["ES2023", "DOM"],
+        "target": "ES2023"
+    }
+}
