@@ -46,6 +46,13 @@
         "bump": "tsdown && bumpp"
     },
 
+    "peerDependencies": {
+        "@zag-js/core": ">=1.0.0",
+        "@zag-js/utils": ">=1.0.0",
+
+        "ripple": ">=0.3.0"
+    },
+
     "devDependencies": {
         "tsdown": "^0.22.2",
 

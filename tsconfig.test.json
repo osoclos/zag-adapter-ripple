@@ -4,7 +4,7 @@
 
     "compilerOptions": {
         // Modules
-        "types": ["vite/client"],
+        "types": ["vite/client", "./lib/ripple-shims.d.ts"],
 
         // Emit
         "declaration": false,
