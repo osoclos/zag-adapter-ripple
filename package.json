@@ -48,6 +48,7 @@
 
     "peerDependencies": {
         "@zag-js/core": ">=1.0.0",
+        "@zag-js/types": ">=1.0.0",
         "@zag-js/utils": ">=1.0.0",
 
         "ripple": ">=0.3.0"

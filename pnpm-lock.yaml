@@ -11,6 +11,9 @@ importers:
       '@zag-js/core':
         specifier: '>=1.0.0'
         version: 1.41.2
+      '@zag-js/types':
+        specifier: '>=1.0.0'
+        version: 1.41.2
       '@zag-js/utils':
         specifier: '>=1.0.0'
         version: 1.41.2
