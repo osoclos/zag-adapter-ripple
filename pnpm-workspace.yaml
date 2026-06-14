@@ -1,0 +1,2 @@
+# for Ripple language server to detect required packages properly
+nodeLinker: "hoisted"

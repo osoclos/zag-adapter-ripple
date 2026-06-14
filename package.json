@@ -51,17 +51,17 @@
         "@zag-js/types": ">=1.0.0",
         "@zag-js/utils": ">=1.0.0",
 
-        "ripple": ">=0.3.0"
+        "ripple": ">=0.3.0",
+        "@ripple-ts/vite-plugin": ">=0.3.0"
     },
 
     "devDependencies": {
         "tsdown": "^0.22.2",
-
         "vitest": "^4.1.8",
-        "@vitest/browser-preview": "^4.1.8",
+
+        "jsdom": "^29.1.1",
 
         "typescript": "^6.0.3",
-
         "@types/node": "^25.9.3",
 
         "bumpp": "^11.1.0",

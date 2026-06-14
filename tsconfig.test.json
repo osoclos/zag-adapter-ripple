@@ -4,11 +4,15 @@
 
     "compilerOptions": {
         // Modules
-        "types": ["vite/client", "./lib/ripple-shims.d.ts"],
+        "types": ["./lib/ripple-shims.d.ts"],
 
         // Emit
         "declaration": false,
         "emitDeclarationOnly": false,
-        "noEmit": true
+        "noEmit": true,
+
+        // Language and Environment
+        "jsx": "preserve",
+        "jsxImportSource": "ripple"
     }
 }
