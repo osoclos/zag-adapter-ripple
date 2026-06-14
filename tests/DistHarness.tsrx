@@ -1,4 +1,4 @@
-import { useMachine } from "../dist/index.mjs"
+import { useMachine } from "../dist"
 
 export default function DistHarness({ machine, machineProps, onReady }: any) @{
     const service = useMachine(machine, machineProps ?? {})

@@ -2,7 +2,7 @@ import { describe, expect, test, vi } from "vitest"
 
 import { createMachine } from "@zag-js/core"
 import { mount, tick } from "ripple"
-import { normalizeProps, mergeProps } from "../dist/index.mjs"
+import { normalizeProps, mergeProps } from "../dist"
 import Harness from "./DistHarness.tsrx"
 
 async function renderMachine(machine: any, machineProps?: any) {
