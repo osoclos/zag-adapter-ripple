@@ -1,4 +1,4 @@
-import { createNormalizer, type JSX, type NormalizeProps, type PropTypes } from "@zag-js/types";
+import { createNormalizer, type NormalizeProps, type PropTypes } from "@zag-js/types";
 import { isNumber, isObject, isString } from "@zag-js/utils";
 
 export const normalizeProps = createNormalizer<Props>((props: Dict) => {
@@ -26,8 +26,8 @@ export const normalizeProps = createNormalizer<Props>((props: Dict) => {
 });
 
 export type Props = JSX.IntrinsicElements & {
-    element: JSX.HTMLAttributes<HTMLElement>;
-    style: JSX.CSSProperties;
+    element: JSX.IntrinsicElements[keyof JSX.IntrinsicElements];
+    style: JSX.IntrinsicElements[keyof JSX.IntrinsicElements]["style"];
 };
 
 const mapProps = {
@@ -57,7 +57,7 @@ function cssify(style: Dict): StyleObject {
         const value = style[prop];
         if (!isString(value) && !isNumber(value)) continue;
 
-        css[formatProp(prop)] = value;
+        (css as Record<string, string | number>)[formatProp(prop)] = value;
     }
 
     return css;
