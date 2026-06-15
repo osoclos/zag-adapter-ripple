@@ -12,7 +12,7 @@ export function onMount(f: (onCleanup: (f: VoidFunction) => void) => void) {
             if (hasCleanup) return;
             hasCleanup = true;
 
-            for (let i: number = fnCleanups.length - 1; i >= 0; i++)
+            for (let i: number = fnCleanups.length - 1; i >= 0; i--)
                 try { fnCleanups[i]!(); }
                 catch (err: unknown) { console.error(err); }
         };
