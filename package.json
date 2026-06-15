@@ -38,12 +38,14 @@
     },
 
     "scripts": {
-        "dev": "concurrently \"tsdown --watch\" \"vitest watch\"",
+        "dev": "pnpm run copy-runtime-file && concurrently \"tsdown --watch\" \"vitest watch\"",
 
-        "build": "tsdown",
+        "build": "pnpm run copy-runtime-file && tsdown",
         "test": "vitest",
 
-        "bump": "tsdown && bumpp"
+        "bump": "pnpm run build && bumpp",
+
+        "copy-runtime-file": "pnpm exec node ./scripts/copy-runtime-file.ts"
     },
 
     "peerDependencies": {
@@ -52,7 +54,9 @@
         "@zag-js/utils": ">=1.0.0",
 
         "ripple": ">=0.3.0",
-        "@ripple-ts/vite-plugin": ">=0.3.0"
+        "@ripple-ts/vite-plugin": ">=0.3.0",
+
+        "clsx": ">=2.0.0"
     },
 
     "devDependencies": {

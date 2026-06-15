@@ -1,6 +1,6 @@
 {
     "extends": "./tsconfig.json",
-    "include": ["tsdown.config.ts", "vitest.config.ts"],
+    "include": ["scripts", "tsdown.config.ts", "vitest.config.ts"],
 
     "compilerOptions": {
         // Modules

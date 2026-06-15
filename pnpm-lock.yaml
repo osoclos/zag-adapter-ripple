@@ -20,6 +20,9 @@ importers:
       '@zag-js/utils':
         specifier: '>=1.0.0'
         version: 1.41.2
+      clsx:
+        specifier: '>=2.0.0'
+        version: 2.1.1
       ripple:
         specifier: '>=0.3.0'
         version: 0.3.79
