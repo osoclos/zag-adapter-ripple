@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 
 const PATH_SRC_RUNTIME: string = "node_modules/ripple/src/jsx-runtime.d.ts";
-const PATH_DST_RUNTIME: string = "src/lib/jsx-runtime.d.ts";
+const PATH_DST_RUNTIME: string = "src/lib/jsx-runtime.ts";
 
 const PATH_LICENSE: string = "node_modules/ripple/LICENSE";
 

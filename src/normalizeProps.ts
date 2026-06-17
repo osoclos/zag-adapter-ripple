@@ -1,7 +1,7 @@
 import { createNormalizer, type NormalizeProps, type PropTypes } from "@zag-js/types";
 import { isNumber, isObject, isString } from "@zag-js/utils";
 
-import "./lib/jsx-runtime.d.ts";
+import "./lib/jsx-runtime.ts";
 
 export const normalizeProps = createNormalizer<Props>((props: Dict) => {
     const propsNormalized = {} as NormalizeProps<Props>;
