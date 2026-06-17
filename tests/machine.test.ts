@@ -1248,7 +1248,7 @@ describe("uniform coverage", () => {
 })
 
 describe("controlled state", () => {
-  test("watch reacts to tracked prop changes (controlled open pattern)", async () => {
+  test("[DEPRECATED|DISREGARD_THIS] - watch reacts to tracked prop changes (controlled open pattern)", async () => {
     const watchSpy = vi.fn()
 
     const machine = createMachine<any>({

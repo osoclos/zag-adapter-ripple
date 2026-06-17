@@ -337,14 +337,7 @@ export function useMachine<T extends MachineSchema>(machine: Machine<T>, userPro
 function createProp<T>(value: () => T) {
     return <K extends keyof T>(key: K): T[K] => {
         const vCurrent = value()[key];
-
-        return (
-            isTracked(vCurrent)
-                ? vCurrent.value as T[K] :
-            isFunction(vCurrent)
-                ? vCurrent()
-                : vCurrent
-        );
+        return isTracked(vCurrent) ? vCurrent.value as T[K] : vCurrent;
     };
 }
 
